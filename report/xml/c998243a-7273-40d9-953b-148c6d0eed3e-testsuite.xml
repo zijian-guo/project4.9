@@ -1,0 +1,44 @@
+<ns0:test-suite xmlns:ns0="urn:model.allure.qatools.yandex.ru" start="1586148043807" stop="1586148073116">
+  <name>Scripts</name>
+  <labels/>
+  <test-cases>
+    <test-case start="1586148043807" status="failed" stop="1586148073116">
+      <name>D:\python_study\04.04\1.实现CSS频道文章查询\Scripts.test_css_query.TestQuery.test_query</name>
+      <failure>
+        <message>AssertionError: </message>
+        <stack-trace>self = &lt;Scripts.test_css_query.TestQuery object at 0x0000020CD41B3FD0&gt;
+
+    def test_query(self):
+    
+        time.sleep(5)
+    
+        # 点击CSS频道
+        self.handle_index.tap_css()
+    
+        # 断言
+&gt;       self.handle_css.assert_art_exist()
+
+Scripts\test_css_query.py:18: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = &lt;Handle.handld_css.HandleCss object at 0x0000020CD206C0B8&gt;
+
+    def assert_art_exist(self):
+        obj = self.get_art_fea()
+&gt;       assert True if obj else False
+E       AssertionError
+
+Handle\handld_css.py:8: AssertionError</stack-trace>
+      </failure>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="7512-MainThread"/>
+        <label name="host" value="zj9-pc"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+  </test-cases>
+</ns0:test-suite>
